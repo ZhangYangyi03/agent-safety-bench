@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_core>=3.9"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "agent-safety-bench"
+version = "0.1.0"
+description = "Multi-step agent safety compliance benchmarking — finds the critical depth D* where LLM agents fail to maintain safety policies across sequential interactions."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Zhang Yangyi", email = "yz1571@georgetown.edu"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "requests>=2.28",
+]
+keywords = ["agent-safety", "llm-safety", "benchmark", "guardrail-gap",
+            "phase-transition", "safety-compliance", "ai-agents"]
+
+[project.urls]
+Home = "https://github.com/ZhangYangyi03/agent-safety-bench"
+Source = "https://github.com/ZhangYangyi03/agent-safety-bench"
+Documentation = "https://github.com/ZhangYangyi03/agent-safety-bench#readme"
+
+[project.scripts]
+agent-safety-bench = "agent_safety_bench.__main__:main"
+
+[tool.flit.module]
+name = "agent_safety_bench"
