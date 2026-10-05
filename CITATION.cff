@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "agent-safety-bench: multi-step agent safety compliance benchmark"
+abstract: "Locates the critical depth D* at which an agent begins to violate a safety policy, rather than measuring single-turn refusal."
+authors:
+  - family-names: Zhang
+    given-names: Yangyi
+    affiliation: Georgetown University
+repository-code: "https://github.com/ZhangYangyi03/agent-safety-bench"
+license: Apache-2.0
+type: software
+keywords: [agent safety, benchmark, evaluation, compliance]
